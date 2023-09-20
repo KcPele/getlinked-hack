@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "primary-gradient": "var(--primary-gradient)",
+        "p-gradient": "var(--primary-gradient)",
+        "nav-gradient": "linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%)",
       },
       colors: {
         "p-white": "var(--primary-white)",
@@ -17,6 +18,10 @@ const config: Config = {
         "p-pupple": "var(--primary-pupple)",
         "p-mix": "var(--primary-mix)",
         "s-pink": "var(--secondary-pink)",
+        "s-black": "var(--secondary-black)",
+      },
+      screens: {
+        "nav-sc": "864px",
       },
     },
   },

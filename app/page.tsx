@@ -23,7 +23,7 @@ const Home = () => {
         keywords="Getlinked, hackathon,Tech,webdesign"
       />
       <Navbar />
-      <Header />
+      {/* <Header />
       <Introduction />
       <Guidelines />
       <Criteria />
@@ -32,7 +32,7 @@ const Home = () => {
       <Rewards />
       <Sponsors />
       <Policy />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
