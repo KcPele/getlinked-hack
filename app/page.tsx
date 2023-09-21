@@ -32,7 +32,8 @@ const Home = () => {
       <Rewards />
       <Sponsors />
       <Policy />
-      <Footer /> */}
+    */}
+      <Footer />
     </div>
   );
 };

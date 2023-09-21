@@ -9,6 +9,7 @@
   --primary-mix: #d434fe;
   --secondary-pink: #fe34b9;
   --secondary-black: #140d27;
+  --footer-black: #100b20;
   --primary-gradient: linear-gradient(
     270deg,
     var(--primary-pupple) 0%,
@@ -61,12 +62,15 @@ body {
 }
 
 /* fonts sizes*/
+.extra-small-font {
+  font-size: 0.75rem;
+}
 .very-small-font {
-  font-size: clamp(0.5rem, 4.5vw, 0.875rem);
+  font-size: 0.875rem;
   font-weight: 700;
 }
 .small-font {
-  font-size: clamp(0.8rem, 4.5vw, 1rem);
+  font-size: 1rem;
 }
 .semi-small-font {
   font-size: clamp(0.9rem, 4.5vw, 1.25rem);

@@ -19,6 +19,7 @@ const config: Config = {
         "p-mix": "var(--primary-mix)",
         "s-pink": "var(--secondary-pink)",
         "s-black": "var(--secondary-black)",
+        "f-black": "var(--footer-black)",
       },
       screens: {
         "nav-sc": "864px",

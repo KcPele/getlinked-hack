@@ -1,3 +1,3 @@
 import Button from "./Button";
-
-export { Button };
+import Logo from "./Logo";
+export { Button, Logo };

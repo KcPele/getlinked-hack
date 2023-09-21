@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "./UI";
+import { Button, Logo } from "./UI";
 import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
@@ -20,9 +20,7 @@ const Navbar = () => {
     <nav className="padding-top padding-left padding-right text-p-white flex justify-between items-center ">
       <div>
         <Link href="/">
-          <h2 className="semi-mid-font">
-            get<span className="text-p-mix">linked</span>
-          </h2>
+          <Logo />
         </Link>
       </div>
       <div className="hidden nav-sc:grid grid-flow-col items-center gap-8 lg:gap-[7.6rem]">
