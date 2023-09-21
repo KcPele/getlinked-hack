@@ -17,6 +17,7 @@ const config: Config = {
         "p-black": "var(--primary-black)",
         "p-pupple": "var(--primary-pupple)",
         "p-mix": "var(--primary-mix)",
+        "p-pink": "var(--primary-pink)",
         "s-pink": "var(--secondary-pink)",
         "s-black": "var(--secondary-black)",
         "f-black": "var(--footer-black)",

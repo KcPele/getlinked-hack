@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="padding-top padding-left padding-right text-p-white flex justify-between items-center ">
+    <nav className="border-white/20 border-b-2 pb-[1.5rem] padding-top padding-left padding-right text-p-white flex justify-between items-center ">
       <div>
         <Link href="/">
           <Logo />

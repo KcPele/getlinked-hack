@@ -8,6 +8,7 @@
   --primary-pupple: #903aff;
   --primary-mix: #d434fe;
   --secondary-pink: #fe34b9;
+  --primary-pink: #ff26b9;
   --secondary-black: #140d27;
   --footer-black: #100b20;
   --primary-gradient: linear-gradient(
@@ -73,16 +74,17 @@ body {
   font-size: 1rem;
 }
 .semi-small-font {
-  font-size: clamp(0.9rem, 4.5vw, 1.25rem);
+  font-size: clamp(0.85rem, 4.5vw, 1.25rem);
 }
 .half-mid-font {
   font-size: clamp(1rem, 4.5vw, 1.5rem);
 }
 .mid-font {
-  font-size: clamp(1rem, 4.5vw, 2rem);
+  font-size: clamp(1.25rem, 4.5vw, 2rem);
+  font-weight: 700;
 }
 .semi-mid-font {
-  font-size: clamp(1.25rem, 4.5vw, 2.25rem);
+  font-size: clamp(1rem, 4.5vw, 2.25rem);
   font-weight: 700;
 }
 
@@ -92,7 +94,10 @@ body {
 .semi-big-font {
   font-size: clamp(1.75rem, 4.5vw, 3.25rem);
 }
-
+.large-font {
+  font-size: clamp(2rem, 4.5vw, 5rem);
+  font-weight: 700;
+}
 .padding-left {
   padding-left: clamp(2.8rem, 4.5vw, 8rem);
 }
@@ -118,3 +123,5 @@ body {
 
   transition: all 0.3s ease-in-out;
 }
+
+/* header bulb section*/

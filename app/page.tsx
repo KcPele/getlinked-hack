@@ -16,18 +16,27 @@ import {
 
 const Home = () => {
   return (
-    <div>
+    <div className="relative">
       <Heading
         title="Getlinked"
         description="Getlinked hackathon 1.0"
         keywords="Getlinked, hackathon,Tech,webdesign"
       />
       <Navbar />
-      {/* <Header />
+      <Header />
+      <div className="-z-30 absolute top-0">
+        <img
+          alt="purple background"
+          src="/assets/image/purple-top-left.png"
+          className="w-full min-w-[300px] opacity-70"
+        />
+      </div>
+
       <Introduction />
       <Guidelines />
       <Criteria />
       <FAQ />
+      {/*
       <Timeline />
       <Rewards />
       <Sponsors />
