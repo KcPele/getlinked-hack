@@ -11,6 +11,7 @@ const config: Config = {
       backgroundImage: {
         "p-gradient": "var(--primary-gradient)",
         "nav-gradient": "linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%)",
+        "contact-left": "assets/image/contact-left-purple.png",
       },
       colors: {
         "p-white": "var(--primary-white)",
