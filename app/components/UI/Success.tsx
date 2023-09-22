@@ -1,8 +1,10 @@
 import Image from "next/image";
-import React from "react";
+import React, { FC } from "react";
 import { Button } from ".";
 
-const Success = () => {
+const Success: FC<{
+  onClick: () => void;
+}> = ({ onClick }) => {
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto">
       <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
@@ -15,7 +17,7 @@ const Success = () => {
             <Image
               width={600}
               height={500}
-              src="/assets/svg/successful-man.svg"
+              src="/assets/svg/congratulation.svg"
               alt="successful"
             />
           </div>
@@ -38,7 +40,11 @@ const Success = () => {
             </div>
           </div>
           <div className="w-full mt-8">
-            <Button text="Back" customeClassName="w-full text-white" />
+            <Button
+              onClick={onClick}
+              text="Back"
+              customeClassName="w-full text-white"
+            />
           </div>
         </div>
       </div>

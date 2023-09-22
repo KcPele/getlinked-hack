@@ -3,7 +3,7 @@ import React from "react";
 
 const Sponsors = () => {
   return (
-    <div className="padding-left padding-right padding-top">
+    <div className="border-white/20 border-b-2 padding-left padding-right padding-top pb-32">
       <div className="mb-16 text-center">
         <h2 className="mid-font text-p-white">Partners and Sponsors</h2>
         <div className="max-w-[28rem] mt-5 mx-auto">

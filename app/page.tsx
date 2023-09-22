@@ -39,9 +39,9 @@ const Home = () => {
       <Timeline />
       <Rewards />
       <Sponsors />
-      {/*
+
       <Policy />
-    */}
+
       <Footer />
     </div>
   );
