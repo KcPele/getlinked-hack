@@ -73,14 +73,14 @@ const FAQ = () => {
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
                   <span>
                     {" "}
-                    What happens if I don't have an idea for a project?
+                    What happens if I dont have an idea for a project?
                   </span>
                   <span className="transition group-open:rotate-180 text-p-mix">
                     +
                   </span>
                 </summary>
                 <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
-                  What happens if I don't have an idea for a project?
+                  What happens if I dont have an idea for a project?
                 </p>
               </details>
             </motion.div>
