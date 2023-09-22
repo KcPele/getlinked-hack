@@ -12,7 +12,7 @@ import {
   RiTwitterXFill,
 } from "react-icons/ri";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 interface FormValues {
   first_name: string;
   email: string;
@@ -35,6 +35,24 @@ const validate = (values: FormValues) => {
   }
 
   return errors;
+};
+const containerVarients = {
+  hidden: {
+    x: "100vw",
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      deplay: 0.5,
+    },
+  },
+  exit: {
+    x: "-100vh",
+    transition: { ease: "easeInOut" },
+  },
 };
 let baseUrl = "https://backend.getlinked.ai";
 const Contact = () => {
@@ -85,7 +103,13 @@ const Contact = () => {
         />
       </div>
 
-      <div className="padding-left padding-right mt-[9rem] grid place-items-center gap-8 grid-flow-col">
+      <motion.div
+        variants={containerVarients}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        className="padding-left padding-right mt-[9rem] grid place-items-center gap-8 grid-flow-col"
+      >
         <div className=" relative hidden md:block">
           <div className="-top-32 left-3 absolute  mix-blend-hard-light  max-w-[1.5rem] w-full">
             <Image
@@ -217,7 +241,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className=" hidden md:block absolute top-10 right-0 mix-blend-hard-light -z-30 max-w-[64rem] right-0-0 w-full">
         <Image
           alt=""

@@ -13,6 +13,7 @@ import {
   Sponsors,
   Timeline,
 } from "./components";
+import ScrollBox from "./components/motion/ScrollBox";
 
 const Home = () => {
   return (
@@ -33,7 +34,9 @@ const Home = () => {
       </div>
 
       <Introduction />
+
       <Guidelines />
+
       <Criteria />
       <FAQ />
       <Timeline />

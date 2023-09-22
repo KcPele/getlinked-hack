@@ -1,8 +1,13 @@
+"use client";
 import React from "react";
-
+import { motion } from "framer-motion";
 const Timeline = () => {
   return (
-    <div className="padding-left padding-right padding-top">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="padding-left padding-right padding-top"
+    >
       <div className="text-p-white grid text-center mx-auto max-w-[21rem]">
         <h2 className="mid-font">Timeline</h2>
         <p className="text-sm">
@@ -15,7 +20,11 @@ const Timeline = () => {
         <div className="max-w-[94rem] mx-auto px-4 py-8">
           <div className="relative wrap overflow-hidden">
             {/* <div className="border-2-2  absolute border-opacity-20 border-p-mix h-full border left-1/2"></div> */}
-            <div className="mb-7 md:mb-2 gap-3 flex   md:justify-between md:items-center w-full">
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="mb-7 md:mb-2 gap-3 flex   md:justify-between md:items-center w-full"
+            >
               <div className="hidden order-1 w-5/12 self-end md:text-end md:flex flex-col items-end">
                 <h3 className="text-p-mix half-mid-font">
                   Hackathon Announcement
@@ -54,8 +63,12 @@ const Timeline = () => {
                   </h3>
                 </div>
               </div>
-            </div>
-            <div className="mb-7 md:mb-2 gap-3 flex   md:justify-between md:items-center w-full">
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="mb-7 md:mb-2 gap-3 flex   md:justify-between md:items-center w-full"
+            >
               <div className="hidden order-1 w-5/12 self-end md:text-end md:flex flex-col md:pb-3">
                 <h3 className="text-p-mix half-mid-font ">November 18, 2023</h3>
               </div>
@@ -86,8 +99,12 @@ const Timeline = () => {
                   </h3>
                 </div>
               </div>
-            </div>
-            <div className="mb-7 md:mb-2 gap-3 flex   md:justify-between md:items-center w-full">
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="mb-7 md:mb-2 gap-3 flex   md:justify-between md:items-center w-full"
+            >
               <div className="hidden order-1 w-5/12 self-end md:text-end md:flex flex-col items-end">
                 <h3 className="text-p-mix half-mid-font">
                   Teams Registration ends
@@ -123,8 +140,12 @@ const Timeline = () => {
                   </h3>
                 </div>
               </div>
-            </div>
-            <div className="mb-7 md:mb-2 gap-3 flex   md:justify-between md:items-center w-full">
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="mb-7 md:mb-2 gap-3 flex   md:justify-between md:items-center w-full"
+            >
               <div className="hidden order-1 w-5/12 self-end md:text-end md:flex flex-col md:pb-3">
                 <h3 className="text-p-mix half-mid-font ">November 18, 2023</h3>
               </div>
@@ -154,8 +175,12 @@ const Timeline = () => {
                   </h3>
                 </div>
               </div>
-            </div>
-            <div className="mb-7 md:mb-2 gap-3 flex   md:justify-between md:items-center w-full">
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="mb-7 md:mb-2 gap-3 flex   md:justify-between md:items-center w-full"
+            >
               <div className="hidden order-1 w-5/12 self-end md:text-end md:flex flex-col items-end">
                 <h3 className="text-p-mix half-mid-font">
                   Getlinked Hackathon 1.0 Offically Begins
@@ -193,8 +218,12 @@ const Timeline = () => {
                   </h3>
                 </div>
               </div>
-            </div>
-            <div className="mb-7 md:mb-2 gap-3 flex   md:justify-between md:items-center w-full">
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="mb-7 md:mb-2 gap-3 flex   md:justify-between md:items-center w-full"
+            >
               <div className="hidden order-1 w-5/12 self-end md:text-end md:flex flex-col md:pb-3">
                 <h3 className="text-p-mix half-mid-font ">November 18, 2023</h3>
               </div>
@@ -223,11 +252,11 @@ const Timeline = () => {
                   </h3>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

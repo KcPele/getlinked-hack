@@ -1,11 +1,20 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-
+import { motion } from "framer-motion";
 const Rewards = () => {
   return (
-    <div className=" pb-32 padding-left padding-right  mt-[3.8rem] flex flex-col items-center justify-center  lg:flex-row gap-4">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className=" pb-32 padding-left padding-right  mt-[3.8rem] flex flex-col items-center justify-center  lg:flex-row gap-4"
+    >
       <div className="hidden flex-1 lg:flex  ">
-        <div className="max-w-[34rem] ">
+        <motion.div
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.5 }}
+          className="max-w-[34rem] "
+        >
           <Image
             width={600}
             height={500}
@@ -13,7 +22,7 @@ const Rewards = () => {
             src="/assets/svg/trophy.svg"
             alt="lady"
           />
-        </div>
+        </motion.div>
       </div>
       <div className=" flex-1 ">
         <div className="  max-w-[48rem] w-full   text-p-white flex gap-8 flex-col items-center md:text-left">
@@ -29,16 +38,24 @@ const Rewards = () => {
               </p>
             </div>
           </div>
-          <div className="lg:hidden mb-36">
+          <motion.div
+            whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+            transition={{ duration: 0.5 }}
+            className="lg:hidden mb-36"
+          >
             <Image
               width={600}
               height={500}
               src="/assets/svg/trophy.svg"
               alt="lady"
             />
-          </div>
+          </motion.div>
           <div className="mt-12 max-w-[43rem] mx-auto lg:mt-0 grid w-full grid-flow-col gap-4 md:gap-6">
-            <div className=" relative max-w-[13.5rem] w-full  max-h-[19rem] h-fit px-2 md:px-4 pb-8 rounded-lg border-[1px] border-p-mix bg-r-primary ">
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className=" relative max-w-[13.5rem] w-full  max-h-[19rem] h-fit px-2 md:px-4 pb-8 rounded-lg border-[1px] border-p-mix bg-r-primary "
+            >
               <div className="h-16 sm:h-32 mb-4 grid">
                 <div className="relative">
                   <div className="absolute -bottom-6 left-0 right-0 mx-auto max-w-[11rem]">
@@ -62,9 +79,13 @@ const Rewards = () => {
                   N300,000
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="mt-8 w-full max-w-[13.5rem]  max-h-[19rem] h-fit px-2 md:px-4 pb-8 rounded-lg border-[1px] border-p-mix bg-r-primary ">
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="mt-8 w-full max-w-[13.5rem]  max-h-[19rem] h-fit px-2 md:px-4 pb-8 rounded-lg border-[1px] border-p-mix bg-r-primary "
+            >
               <div className="h-16 sm:h-32 mb-4 grid">
                 <div className="relative">
                   <div className="absolute left-0 right-0 sm:-left-[68px] -bottom-6 sm:w-[18rem] ">
@@ -86,9 +107,13 @@ const Rewards = () => {
                   N300,000
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="  w-full max-w-[13.5rem]  max-h-[19rem] h-fit px-2 md:px-4 pb-8 rounded-lg border-[1px] border-p-mix bg-r-primary ">
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="  w-full max-w-[13.5rem]  max-h-[19rem] h-fit px-2 md:px-4 pb-8 rounded-lg border-[1px] border-p-mix bg-r-primary "
+            >
               <div className="h-16 sm:h-32 mb-4 grid">
                 <div className="relative">
                   <div className="absolute  -bottom-6 left-0 right-0 max-w-[11rem]">
@@ -112,11 +137,11 @@ const Rewards = () => {
                   N300,000
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

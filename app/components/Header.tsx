@@ -4,11 +4,31 @@ import React from "react";
 import { Button } from "./UI";
 import { useRouter } from "next/navigation";
 import { Unica_One } from "next/font/google";
+import { motion } from "framer-motion";
 const unicaOne = Unica_One({ weight: ["400"], subsets: ["latin"] });
+const containerVarients = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { delay: 0.1, duration: 0.5 },
+  },
+  exit: {
+    x: "-100vh",
+    transition: { ease: "easeInOut" },
+  },
+};
 const Header = () => {
   const router = useRouter();
   return (
-    <div className="border-white/20 border-b-2">
+    <motion.div
+      variants={containerVarients}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="border-white/20 border-b-2"
+    >
       <div className="w-full padding-left  grid   place-items-end pr-[3.4rem] ">
         <h3 className="text-p-white semi-mid-font mb-0">
           Igniting a Revolution in HR Innovation
@@ -111,7 +131,7 @@ const Header = () => {
             />
           </div>
 
-          <div className=" ">
+          <div>
             <Image
               alt="human virtual reality"
               src="/assets/image/man-virtaul-screen.png"
@@ -122,7 +142,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

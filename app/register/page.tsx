@@ -7,7 +7,7 @@ import { Button, InputField } from "../components/UI";
 
 import Image from "next/image";
 import Success from "../components/UI/Success";
-
+import { motion } from "framer-motion";
 interface FormValues {
   team_name: string;
   phone_number: string;
@@ -44,6 +44,24 @@ const validate = (values: FormValues) => {
     errors.privacy_poclicy_accepted = "Field cannot be empty";
   }
   return errors;
+};
+const containerVarients = {
+  hidden: {
+    x: "100vw",
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      deplay: 0.5,
+    },
+  },
+  exit: {
+    x: "-100vh",
+    transition: { ease: "easeInOut" },
+  },
 };
 const Register = () => {
   let baseUrl = "https://backend.getlinked.ai";
@@ -125,7 +143,13 @@ const Register = () => {
           className="-z-30 "
         />
       </div>
-      <div className="sm:px-10 lg:px-20 mt-[9rem] flex justify-center items-center gap-8 flex-col md:flex-row">
+      <motion.div
+        variants={containerVarients}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        className="sm:px-10 lg:px-20 mt-[9rem] flex justify-center items-center gap-8 flex-col md:flex-row"
+      >
         <div className="">
           <div>
             <Image
@@ -313,7 +337,7 @@ const Register = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className=" hidden md:block absolute bottom-0 right-0 mix-blend-hard-light -z-30 max-w-[64rem] right-0-0 w-full">
         <Image
           alt=""

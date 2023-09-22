@@ -1,9 +1,14 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-
+import { motion } from "framer-motion";
 const FAQ = () => {
   return (
-    <div className="pb-20 padding-left padding-right border-white/20 border-b-2 mt-[3.8rem] grid md:grid-cols-2 gap-4 place-items-center">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="pb-20 padding-left padding-right border-white/20 border-b-2 mt-[3.8rem] grid md:grid-cols-2 gap-4 place-items-center"
+    >
       <div className="text-p-white grid max-w-[30rem] w-full ">
         <div className="text-center md:text-left">
           <h2 className="mid-font">
@@ -19,7 +24,11 @@ const FAQ = () => {
         </div>
         <div className="max-w-[28rem] w-full">
           <div className="w-full   mt-8  ">
-            <div className="py-5 border-b-[1px] border-p-mix">
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="py-5 border-b-[1px] border-p-mix"
+            >
               <details className="group">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
                   <span>
@@ -34,8 +43,12 @@ const FAQ = () => {
                   Can I work on a project I started before the hackathon?
                 </p>
               </details>
-            </div>
-            <div className="py-5 border-b-[1px] border-p-mix">
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="py-5 border-b-[1px] border-p-mix"
+            >
               <details className="group">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
                   <span>
@@ -50,8 +63,12 @@ const FAQ = () => {
                   What happens if I need help during the hackathon?
                 </p>
               </details>
-            </div>
-            <div className="py-5 border-b-[1px] border-p-mix">
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="py-5 border-b-[1px] border-p-mix"
+            >
               <details className="group">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
                   <span>
@@ -66,8 +83,12 @@ const FAQ = () => {
                   What happens if I don't have an idea for a project?
                 </p>
               </details>
-            </div>
-            <div className="py-5 border-b-[1px] border-p-mix">
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="py-5 border-b-[1px] border-p-mix"
+            >
               <details className="group">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
                   <span> Can I join a team or do I have to come with one?</span>
@@ -79,8 +100,12 @@ const FAQ = () => {
                   Can I join a team or do I have to come with one?
                 </p>
               </details>
-            </div>
-            <div className="py-5 border-b-[1px] border-p-mix">
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="py-5 border-b-[1px] border-p-mix"
+            >
               <details className="group ">
                 <summary className="w-full flex cursor-pointer list-none items-center justify-between gap-4">
                   <span> What happens after the hackathon ends</span>
@@ -92,8 +117,12 @@ const FAQ = () => {
                   What happens after the hackathon ends
                 </p>
               </details>
-            </div>
-            <div className="py-5 border-b-[1px] border-p-mix ">
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="py-5 border-b-[1px] border-p-mix "
+            >
               <details className="group ">
                 <summary className="w-full flex cursor-pointer list-none items-center justify-between gap-4">
                   <span>
@@ -108,21 +137,24 @@ const FAQ = () => {
                   Can I work on a project I started before the hackathon?
                 </p>
               </details>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
       <div>
-        <div>
+        <motion.div
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.5 }}
+        >
           <Image
             width={600}
             height={500}
             src="/assets/svg/cwok-casual.svg"
             alt="cwok"
           />
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

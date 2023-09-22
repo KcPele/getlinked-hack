@@ -1,12 +1,17 @@
+"use client";
 import Image from "next/image";
 import React, { FC } from "react";
 import { Button } from ".";
-
+import { motion } from "framer-motion";
 const Success: FC<{
   onClick: () => void;
 }> = ({ onClick }) => {
   return (
-    <div className="fixed z-10 inset-0 overflow-y-auto">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="fixed z-10 inset-0 overflow-y-auto"
+    >
       <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
         <div className="fixed inset-0 transition-opacity">
           <div className="absolute inset-0 bg-[#150E28ED] opacity-75"></div>
@@ -48,7 +53,7 @@ const Success: FC<{
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

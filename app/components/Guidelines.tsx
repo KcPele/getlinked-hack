@@ -1,10 +1,19 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-
+import { motion } from "framer-motion";
 const Guidelines = () => {
   return (
-    <div className="pb-20 padding-left padding-right border-white/20 border-b-2 mt-[3.8rem] grid md:grid-cols-2 gap-4 place-items-center">
-      <div className="text-p-white grid text-center md:text-left">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="pb-20 padding-left padding-right border-white/20 border-b-2 mt-[3.8rem] grid md:grid-cols-2 gap-4 place-items-center"
+    >
+      <motion.div
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="text-p-white grid text-center md:text-left"
+      >
         <h2 className="mid-font">
           Rules and
           <span className="text-p-mix block">Guidelines</span>
@@ -19,18 +28,21 @@ const Guidelines = () => {
             solutions that can change the world, that's what we're all about!
           </p>
         </div>
-      </div>
+      </motion.div>
       <div>
-        <div>
+        <motion.div
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.7 }}
+        >
           <Image
             width={600}
             height={500}
             src="/assets/svg/good-lady.svg"
             alt="lady"
           />
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
