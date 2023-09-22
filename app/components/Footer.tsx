@@ -2,7 +2,12 @@ import React from "react";
 import { Logo } from "./UI";
 import Link from "next/link";
 import Image from "next/image";
-
+import {
+  RiFacebookFill,
+  RiInstagramLine,
+  RiLinkedinFill,
+  RiTwitterXFill,
+} from "react-icons/ri";
 const Footer = () => {
   return (
     <div className="bg-f-black padding-left padding-right pt-[4.3rem] pb-[3.3rem]">
@@ -43,32 +48,12 @@ const Footer = () => {
               <div className="flex items-center gap-4">
                 <p className="extra-small-font text-p-mix">Follow us</p>
                 <div className="flex gap-4">
-                  <Image
-                    alt="instagram"
-                    src="/assets/svg/instagram.svg"
-                    width={25}
-                    height={25}
-                  />
-                  <Image
-                    alt="x"
-                    src="/assets/svg/twitter.svg"
-                    width={25}
-                    height={25}
-                  />
+                  <RiInstagramLine className="text-white" size={25} />
+                  <RiTwitterXFill className="text-white" size={25} />
 
-                  <Image
-                    alt="facebook"
-                    src="/assets/svg/facebook.svg"
-                    width={18}
-                    height={18}
-                  />
+                  <RiFacebookFill className="text-white" size={25} />
 
-                  <Image
-                    alt="linkedin"
-                    src="/assets/svg/linkedin.svg"
-                    width={25}
-                    height={25}
-                  />
+                  <RiLinkedinFill className="text-white" size={25} />
                 </div>
               </div>
             </div>

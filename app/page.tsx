@@ -37,9 +37,9 @@ const Home = () => {
       <Criteria />
       <FAQ />
       <Timeline />
-      {/*
       <Rewards />
       <Sponsors />
+      {/*
       <Policy />
     */}
       <Footer />

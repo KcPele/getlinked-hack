@@ -21,6 +21,8 @@ const config: Config = {
         "s-pink": "var(--secondary-pink)",
         "s-black": "var(--secondary-black)",
         "f-black": "var(--footer-black)",
+        "r-primary": "rgba(212, 52, 254, 0.12)",
+        "r-secondary": "rgba(255, 38, 185, 0.12)",
       },
       screens: {
         "nav-sc": "864px",

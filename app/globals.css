@@ -77,7 +77,7 @@ body {
   font-size: clamp(0.85rem, 4.5vw, 1.25rem);
 }
 .half-mid-font {
-  font-size: clamp(1rem, 4.5vw, 1.5rem);
+  font-size: clamp(0.75rem, 4.5vw, 1.5rem);
 }
 .mid-font {
   font-size: clamp(1.25rem, 4.5vw, 2rem);
@@ -99,14 +99,14 @@ body {
   font-weight: 700;
 }
 .padding-left {
-  padding-left: clamp(2.8rem, 4.5vw, 8rem);
+  padding-left: clamp(2.6rem, 4.5vw, 8rem);
 }
 
 .padding-right {
-  padding-right: clamp(2.8rem, 4.5vw, 8rem);
+  padding-right: clamp(2.6rem, 4.5vw, 8rem);
 }
 .padding-top {
-  padding-top: clamp(2.8rem, 4.5vw, 4rem);
+  padding-top: clamp(2.6rem, 4.5vw, 4rem);
 }
 
 .nav-text-gradient {
