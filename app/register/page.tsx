@@ -118,7 +118,7 @@ const Register = () => {
     },
   });
   return (
-    <div className="relative  h-full overflow-hidden pb-14">
+    <div className="relative  h-full overflow-x-clip pb-14">
       {isSuccess && (
         <Success
           onClick={() => {

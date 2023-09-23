@@ -4,31 +4,13 @@ import React from "react";
 import { Button } from "./UI";
 import { useRouter } from "next/navigation";
 import { Unica_One } from "next/font/google";
-import { motion } from "framer-motion";
+
 const unicaOne = Unica_One({ weight: ["400"], subsets: ["latin"] });
-const containerVarients = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: { delay: 0.1, duration: 0.5 },
-  },
-  exit: {
-    x: "-100vh",
-    transition: { ease: "easeInOut" },
-  },
-};
+
 const Header = () => {
   const router = useRouter();
   return (
-    <motion.div
-      variants={containerVarients}
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-      className="border-white/20 border-b-2"
-    >
+    <div className="border-white/20 border-b-2 -z-40">
       <div className="z-50 w-full padding-left  grid   place-items-end pr-[3.4rem] ">
         <h3 className="text-p-white semi-mid-font mb-0">
           Igniting a Revolution in HR Innovation
@@ -130,7 +112,7 @@ const Header = () => {
               className=" min-w-[300px]   w-full"
             />
           </div>
-          <div className=" -top-[200px] hidden md:block absolute mix-blend-hard-light  max-w-[64rem]  w-full">
+          <div className=" -top-32 hidden md:block absolute mix-blend-hard-light  max-w-[64rem]  w-full">
             <Image
               alt=""
               src="/assets/image/purple-top-right.png"
@@ -152,7 +134,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -17,7 +17,7 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className="relative">
+    <div className="relative overflow-x-clip">
       <Heading
         title="Getlinked"
         description="Getlinked hackathon 1.0"
