@@ -63,9 +63,16 @@ const containerVarients = {
     transition: { ease: "easeInOut" },
   },
 };
+let groups = [
+  { id: 1, name: "1-3" },
+  { id: 2, name: "4-6" },
+  { id: 3, name: "7-10" },
+  { id: 4, name: "11-15" },
+];
 const Register = () => {
   let baseUrl = "https://backend.getlinked.ai";
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
+
   const [categories, setCategories] = React.useState<
     Array<{ id: number; name: string }>
   >([]);
@@ -290,9 +297,9 @@ const Register = () => {
                   <option className="bg-transparent text-p-white p-4" value="">
                     Select
                   </option>
-                  {categories.map((category) => (
-                    <option key={category.id} value={category.id}>
-                      {category.name}
+                  {groups.map((group) => (
+                    <option key={group.id} value={group.id}>
+                      {group.name}
                     </option>
                   ))}
                 </select>
