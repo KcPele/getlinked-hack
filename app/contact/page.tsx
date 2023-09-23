@@ -85,7 +85,7 @@ const Contact = () => {
     },
   });
   return (
-    <div className="relative overflow-x-clip">
+    <div className="relative overflow-x-clip pb-10">
       <Heading
         title="contact"
         description="contact us"

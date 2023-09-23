@@ -38,6 +38,9 @@ const Navbar = () => {
         </div>
         <div className="max-w-[10.7rem]">
           <Button
+            customeClassName={`${
+              pathname === "/register" && " register-active"
+            }`}
             onClick={() => {
               router.push("/register");
             }}
@@ -84,7 +87,7 @@ const Navbar = () => {
                 <div className="mt-8 max-w-[10.7rem]">
                   <Button
                     customeClassName={`${
-                      pathname === "/register" && "nav-border-gradient"
+                      pathname === "/register" && " register-active"
                     }`}
                     onClick={() => {
                       router.push("/register");
