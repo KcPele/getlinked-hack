@@ -13,6 +13,7 @@ import {
   Sponsors,
   Timeline,
 } from "./components";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -23,14 +24,18 @@ const Home = () => {
         keywords="Getlinked, hackathon,Tech,webdesign"
       />
       <Navbar />
-      <Header />
-      <div className="-z-30 absolute top-0">
-        <img
-          alt="purple background"
-          src="/assets/image/purple-top-left.png"
-          className="w-full min-w-[300px] opacity-70"
+      <div className=" absolute mix-blend-hard-light  -z-30 max-w-[64rem] -top-10 md:-top-[150px] w-full">
+        <Image
+          alt=""
+          src="/assets/image/contact-left-purple.png"
+          layout="responsive"
+          width={1000}
+          height={1000}
+          objectFit="cover"
+          className="-z-30 w-full"
         />
       </div>
+      <Header />
 
       <Introduction />
 

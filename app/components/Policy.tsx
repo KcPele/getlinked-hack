@@ -5,11 +5,7 @@ import { Button } from "./UI";
 import { motion } from "framer-motion";
 const Policy = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      className="pb-36 padding-left padding-right  mt-[3.8rem] grid md:grid-cols-2 gap-4 place-items-center"
-    >
+    <div className="relative overflow-x-clip pb-36 padding-left padding-right  mt-[3.8rem] grid md:grid-cols-2 gap-4 place-items-center">
       <div className="mb-24  md:mb-0 text-p-white grid max-w-[36rem] w-full ">
         <div className="text-center md:text-left grid w-full ">
           <h2 className="mid-font">
@@ -109,7 +105,17 @@ const Policy = () => {
           />
         </motion.div>
       </div>
-    </motion.div>
+      <div className="hidden md:block left-0 -bottom-72 absolute mix-blend-hard-light -z-30 max-w-[64rem]  w-full">
+        <Image
+          alt=""
+          src="/assets/image/contact-left-purple.png"
+          layout="responsive"
+          width={500}
+          height={500}
+          className="-z-30 "
+        />
+      </div>
+    </div>
   );
 };
 

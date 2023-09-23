@@ -29,7 +29,7 @@ const Header = () => {
       exit="exit"
       className="border-white/20 border-b-2"
     >
-      <div className="w-full padding-left  grid   place-items-end pr-[3.4rem] ">
+      <div className="z-50 w-full padding-left  grid   place-items-end pr-[3.4rem] ">
         <h3 className="text-p-white semi-mid-font mb-0">
           Igniting a Revolution in HR Innovation
         </h3>
@@ -43,7 +43,7 @@ const Header = () => {
         </div>
       </div>
       <div className="  grid md:grid-flow-col justify-between mt-16">
-        <div className="padding-left flex flex-col items-center md:items-start">
+        <div className="padding-left flex flex-col items-center  md:items-start">
           <div className="grid  place-items-end">
             <div className="pr-2 relative">
               <div>
@@ -121,7 +121,7 @@ const Header = () => {
           </div>
         </div>
         <div className="relative max-w-[51rem]">
-          <div className="absolute left-10 ">
+          <div className="z-50 absolute left-10 ">
             <Image
               alt="human virtual reality"
               src="/assets/image/earth-glow.png"
@@ -130,8 +130,18 @@ const Header = () => {
               className=" min-w-[300px]   w-full"
             />
           </div>
+          <div className=" -top-[200px] hidden md:block absolute mix-blend-hard-light  max-w-[64rem]  w-full">
+            <Image
+              alt=""
+              src="/assets/image/purple-top-right.png"
+              layout="responsive"
+              width={500}
+              height={500}
+              className=" w-full mix-blend-hard-light "
+            />
+          </div>
 
-          <div>
+          <div className="">
             <Image
               alt="human virtual reality"
               src="/assets/image/man-virtaul-screen.png"

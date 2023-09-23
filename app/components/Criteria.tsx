@@ -5,15 +5,12 @@ import { Button } from "./UI";
 import { motion } from "framer-motion";
 const Criteria = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      className="pb-32 padding-left padding-right border-white/20 border-b-2 mt-[3.8rem] grid md:grid-cols-2 gap-4 place-items-center"
-    >
-      <div>
+    <div className="overflow-x-clip relative pb-32 padding-left padding-right border-white/20 border-b-2 mt-[3.8rem] grid md:grid-cols-2 gap-4 place-items-center">
+      <div className="relative">
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
           transition={{ duration: 0.5 }}
+          className="md:hidden"
         >
           <Image
             width={600}
@@ -22,6 +19,28 @@ const Criteria = () => {
             alt="lady"
           />
         </motion.div>
+        <motion.div
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.5 }}
+          className="hidden md:block"
+        >
+          <Image
+            width={600}
+            height={500}
+            src="/assets/svg/together-chat-ellipse.svg"
+            alt="lady"
+          />
+        </motion.div>
+        <div className="top-20  absolute mix-blend-hard-light -z-30 max-w-[64rem]  w-full">
+          <Image
+            alt=""
+            src="/assets/image/left-guideline-purple.png"
+            layout="responsive"
+            width={500}
+            height={500}
+            className="-z-30 w-full"
+          />
+        </div>
       </div>
       <div className="text-p-white grid text-center md:text-left">
         <h2 className="mid-font">
@@ -97,7 +116,17 @@ const Criteria = () => {
           <Button text="Register" onClick={() => {}} />
         </motion.div>
       </div>
-    </motion.div>
+      <div className="-right-44 md:-right-[20rem] bottom-0 md:top-16 absolute mix-blend-hard-light -z-30 max-w-[64rem]  w-full">
+        <Image
+          alt=""
+          src="/assets/image/right-criteria-purple.png"
+          layout="responsive"
+          width={500}
+          height={500}
+          className="-z-30 w-full"
+        />
+      </div>
+    </div>
   );
 };
 

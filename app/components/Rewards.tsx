@@ -4,12 +4,18 @@ import React from "react";
 import { motion } from "framer-motion";
 const Rewards = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      className=" pb-32 padding-left padding-right  mt-[3.8rem] flex flex-col items-center justify-center  lg:flex-row gap-4"
-    >
-      <div className="hidden flex-1 lg:flex  ">
+    <div className="overflow-x-clip relative pb-32 padding-left padding-right  mt-[3.8rem] grid lg:grid-flow-col place-items-center   gap-4">
+      <div className=" absolute left-20  mix-blend-hard-light -z-30 max-w-[64rem]  w-full">
+        <Image
+          alt=""
+          src="/assets/image/left-guideline-purple.png"
+          layout="responsive"
+          width={500}
+          height={500}
+          className="-z-30 w-full"
+        />
+      </div>
+      <div className=" hidden flex-1 lg:flex  ">
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
           transition={{ duration: 0.5 }}
@@ -50,7 +56,7 @@ const Rewards = () => {
               alt="lady"
             />
           </motion.div>
-          <div className="mt-12 max-w-[43rem] mx-auto lg:mt-0 grid w-full grid-flow-col gap-4 md:gap-6">
+          <div className="relative mt-12 max-w-[43rem] mx-auto lg:mt-0 grid w-full grid-flow-col gap-4 md:gap-6">
             <motion.div
               whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
               transition={{ duration: 0.5 }}
@@ -141,7 +147,7 @@ const Rewards = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

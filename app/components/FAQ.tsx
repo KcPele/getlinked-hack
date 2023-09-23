@@ -7,7 +7,7 @@ const FAQ = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      className="pb-20 padding-left padding-right border-white/20 border-b-2 mt-[3.8rem] grid md:grid-cols-2 gap-4 place-items-center"
+      className="pb-20 padding-left padding-right border-white/20 border-b-2 mt-[3.8rem] grid md:grid-cols-2 gap-10 md:gap-4 place-items-center"
     >
       <div className="text-p-white grid max-w-[30rem] w-full ">
         <div className="text-center md:text-left">
