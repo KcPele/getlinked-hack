@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,400;0,600;0,700;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,6 +22,15 @@
 
 body {
   background-color: var(--secondary-black);
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3 {
+}
+p,
+li {
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .scale-up-center {
@@ -65,16 +75,20 @@ body {
 /* fonts sizes*/
 .extra-small-font {
   font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
 }
 .very-small-font {
   font-size: 0.875rem;
   font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 .small-font {
   font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 .semi-small-font {
   font-size: clamp(0.85rem, 4.5vw, 1.25rem);
+  font-family: "Montserrat", sans-serif;
 }
 .half-mid-font {
   font-size: clamp(0.75rem, 4.5vw, 1.5rem);

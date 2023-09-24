@@ -47,11 +47,11 @@ const Criteria = () => {
           Judging Criteria
           <span className="text-p-mix block">Key attributes</span>
         </h2>
-        <div className="max-w-[35rem] mt-[1.3rem] grid gap-7">
+        <div className="font-mont max-w-[35rem] mt-[1.3rem] grid gap-7">
           <motion.p
             whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
             transition={{ duration: 0.5 }}
-            className="very-small-font"
+            className="very-small-font font-mont"
           >
             <span className="text-p-pink text-base">
               Innovation and Creativity:

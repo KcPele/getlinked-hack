@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const FAQ = () => {
   return (
     <motion.div
+      id="faq"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       className="pb-20 padding-left padding-right border-white/20 border-b-2 mt-[3.8rem] grid md:grid-cols-2 gap-10 md:gap-4 place-items-center"
@@ -15,7 +16,7 @@ const FAQ = () => {
             Frequetly Ask
             <span className="text-p-mix block">Question</span>
           </h2>
-          <div className="max-w-[22rem]">
+          <div className="max-w-[22rem] mx-auto md:mx-0">
             <p>
               We got answers to the questions that you might want to ask about
               getlinked Hackathon 1.0

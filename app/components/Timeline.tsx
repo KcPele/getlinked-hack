@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const Timeline = () => {
   return (
     <motion.div
+    id="timeline"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       className="padding-left padding-right padding-top"

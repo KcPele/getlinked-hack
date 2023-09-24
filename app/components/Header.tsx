@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className="border-white/20 border-b-2 -z-40 ">
       <div className="z-50 w-full padding-left  grid   place-items-end pr-[3.4rem] ">
-        <h3 className="text-p-white semi-mid-font mb-0">
+        <h3 className="font-mont italic  text-p-white semi-mid-font mb-0">
           Igniting a Revolution in HR Innovation
         </h3>
         <div className="pr-4 ">

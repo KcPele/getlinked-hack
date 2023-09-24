@@ -13,6 +13,9 @@ const config: Config = {
         "nav-gradient": "linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%)",
         "contact-left": "assets/image/contact-left-purple.png",
       },
+      fontFamily: {
+        mont: "Montserrat",
+      },
       colors: {
         "p-white": "var(--primary-white)",
         "p-black": "var(--primary-black)",
