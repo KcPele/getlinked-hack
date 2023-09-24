@@ -10,7 +10,7 @@ const unicaOne = Unica_One({ weight: ["400"], subsets: ["latin"] });
 const Header = () => {
   const router = useRouter();
   return (
-    <div className="border-white/20 border-b-2 -z-40">
+    <div className="border-white/20 border-b-2 -z-40 ">
       <div className="z-50 w-full padding-left  grid   place-items-end pr-[3.4rem] ">
         <h3 className="text-p-white semi-mid-font mb-0">
           Igniting a Revolution in HR Innovation
@@ -24,9 +24,9 @@ const Header = () => {
           />
         </div>
       </div>
-      <div className="  grid md:grid-flow-col justify-between mt-16">
-        <div className="padding-left flex flex-col items-center  md:items-start">
-          <div className="grid  place-items-end">
+      <div className=" grid md:grid-flow-col    mt-16">
+        <div className=" w-full px-4 md:pl-16 lg:pl-32 flex flex-col items-center  md:items-start">
+          <div className="grid    place-items-end">
             <div className="pr-2 relative">
               <div>
                 <Image
@@ -62,7 +62,7 @@ const Header = () => {
               />
             </div>
           </div>
-          <div className="max-w-[32rem]">
+          <div className="  max-w-[32rem] w-full  ">
             <p className="half-mid-font text-p-white">
               Participate in getlinked tech Hackathon 2023 stand a chance to win
               a Big prize
@@ -102,7 +102,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="relative max-w-[51rem]">
+        <div className="relative self-end  max-w-[51rem]">
           <div className="z-50 absolute left-10 ">
             <Image
               alt="human virtual reality"
