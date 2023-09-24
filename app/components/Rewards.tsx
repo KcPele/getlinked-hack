@@ -107,10 +107,10 @@ const Rewards = () => {
                 <div></div>
               </div>
               <div className="text-center">
-                <h3 className="text-p-white semi-mid-font">2nd</h3>
+                <h3 className="text-p-white semi-mid-font">1st</h3>
                 <p className="half-mid-font text-p-white">Runner</p>
                 <p className="text-p-mix text-sm font-bold sm:text-3xl">
-                  N300,000
+                  N400,000
                 </p>
               </div>
             </motion.div>
@@ -137,10 +137,10 @@ const Rewards = () => {
                 <div></div>
               </div>
               <div className="text-center ">
-                <h3 className="text-p-white semi-mid-font">2nd</h3>
+                <h3 className="text-p-white semi-mid-font">3rd</h3>
                 <p className="half-mid-font text-p-white">Runner</p>
                 <p className="text-p-mix text-sm font-bold sm:text-3xl">
-                  N300,000
+                  N150,000
                 </p>
               </div>
             </motion.div>

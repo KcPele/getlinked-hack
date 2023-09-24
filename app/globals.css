@@ -24,10 +24,7 @@ body {
   background-color: var(--secondary-black);
   scroll-behavior: smooth;
 }
-h1,
-h2,
-h3 {
-}
+
 p,
 li {
   font-family: "Montserrat", sans-serif !important;
