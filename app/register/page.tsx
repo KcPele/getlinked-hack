@@ -268,7 +268,7 @@ const Register = () => {
                     formik.errors.category
                       ? "border-rose-500"
                       : "border-p-white"
-                  }  bg-transparent   px-6 rounded-md  py-3 text-p-white`}
+                  }  bg-s-black  px-4 rounded-md  py-3 text-p-white`}
                 >
                   <option className=" text-p-white p-4" value="">
                     Select yout category
@@ -292,7 +292,7 @@ const Register = () => {
                     formik.errors.group_size
                       ? "border-rose-500"
                       : "border-p-white"
-                  }  bg-transparent  px-6 rounded-md  py-3 text-p-white`}
+                  }  bg-s-black  px-4 rounded-md  py-3 text-p-white`}
                 >
                   <option className="bg-transparent text-p-white p-4" value="">
                     Select
