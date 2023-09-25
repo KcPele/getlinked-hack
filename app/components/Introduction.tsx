@@ -10,7 +10,7 @@ const Introduction = () => {
       id="overview"
       className="pb-20 padding-left padding-right border-white/20 border-b-2 mt-[3.8rem] grid md:grid-cols-2 gap-4 place-items-center"
     >
-      <div>
+      <div className="relative">
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
           transition={{ duration: 0.5 }}
@@ -22,6 +22,24 @@ const Introduction = () => {
             alt="lady"
           />
         </motion.div>
+        <div className="hidden md:block absolute -bottom-5 md:-right-5 lg:-right-16">
+          <Image
+            width={100}
+            height={100}
+            src="/assets/image/arrow.png"
+            alt="arrow"
+            className="w-full"
+          />
+        </div>
+      </div>
+      <div className=" md:hidden">
+        <Image
+          width={100}
+          height={100}
+          src="/assets/image/arrow.png"
+          alt="arrow"
+          className="w-full"
+        />
       </div>
       <motion.div
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
