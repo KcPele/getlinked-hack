@@ -11,7 +11,7 @@ const Header = () => {
   const router = useRouter();
   return (
     <div className="border-white/20 border-b-2 -z-40 ">
-      <div className="z-50 w-full padding-left  grid   place-items-end pr-[3.4rem] ">
+      <div className="z-[1000] w-full padding-left  grid   place-items-end pr-[3.4rem] ">
         <h3 className="font-mont italic  text-p-white semi-mid-font mb-0">
           Igniting a Revolution in HR Innovation
         </h3>
@@ -112,7 +112,7 @@ const Header = () => {
               className=" min-w-[300px]   w-full"
             />
           </div>
-          <div className=" -top-32 hidden md:block absolute mix-blend-hard-light  max-w-[64rem]  w-full">
+          <div className=" -top-32 hidden  md:flex justify-center items-center absolute mix-blend-hard-light overflow-hidden  h-[500px] max-w-[64rem]  w-full">
             <Image
               alt=""
               src="/assets/image/purple-top-right.png"
