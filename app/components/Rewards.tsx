@@ -90,7 +90,7 @@ const Rewards = () => {
             <motion.div
               whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
               transition={{ duration: 0.5 }}
-              className="mt-8 w-full max-w-[13.5rem]  max-h-[19rem] h-fit px-2 md:px-4 pb-8 rounded-lg border-[1px] border-p-mix bg-r-primary "
+              className="mt-8 w-full max-w-[13.5rem]  max-h-[19rem] h-fit px-2 md:px-4 pb-8 rounded-lg border-[1px] border-[#903AFF] bg-[#903AFF]/[12%] "
             >
               <div className="h-16 sm:h-32 mb-4 grid">
                 <div className="relative">
@@ -109,7 +109,7 @@ const Rewards = () => {
               <div className="text-center">
                 <h3 className="text-p-white semi-mid-font">1st</h3>
                 <p className="half-mid-font text-p-white">Runner</p>
-                <p className="text-p-mix text-sm font-bold sm:text-3xl">
+                <p className="text-[#903AFF] text-sm font-bold sm:text-3xl">
                   N400,000
                 </p>
               </div>
